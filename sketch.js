@@ -14,7 +14,7 @@ function preload() {
 
 function setup() {
   song.play()
-  createCanvas(710, 400);
+  createCanvas(1920, 1080);
   isSongPlaying = false;
 
   // set up the font
@@ -30,6 +30,10 @@ function setup() {
 function draw() {
   
   background(204, 120);
+
+  fill("white");
+  text("Shultz", random(1920), random(1080));
+  text("Bruno", random(1920), random(1080));
 
   // write the text in black and get its bounding box
   fill(0);
@@ -52,10 +56,10 @@ function draw() {
   text("granice ludzkiego pojmowania", mouseX + 10, mouseY + 10)
   textSize(fontsize);
 
+
+
 }
 
 function mouseClicked() {
-  fill("orange");
-  text("Shultz", random(400), random(400));
-  text("Bruno", random(400), random(400));
+
 }
