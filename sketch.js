@@ -81,7 +81,8 @@ function draw() {
 
   textFont(font);
   fill(0);
-  textSize
+  fill("fuchsia")
+  textSize(70)
   text(message, x, y);
   bounds = font.textBounds(message, x, y, fontsize);
 
