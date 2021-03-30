@@ -17,11 +17,13 @@ function preload() {
   font_secondary = loadFont('Berk.ttf')
   font_third = loadFont("Cinzel.ttf")
   song = loadSound('LD.mp3');
+  img = loadImage("school.jpg")
 }
 
 function setup() {
   song.play()
   createCanvas(1000, 1000);
+  image(img, 0, 0)
   isSongPlaying = false;
 
   messagey = - 10
@@ -37,6 +39,8 @@ function setup() {
 }
 
 function draw() {
+
+  image(img, 0, 0)
 
   sinx = sin(frameCount / 25) * 100;
   siny = cos(frameCount / 50) * 200;
