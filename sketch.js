@@ -47,6 +47,7 @@ function draw() {
   
   ellipse(200 + sinx + mouseX, 200 + siny, 50, 50);
   ellipse(220 + sinx + mouseX, 200 + siny, 50, 50);
+  text("pupa ->",sinx + mouseX - 150, 200 + siny + 20)
 
   messagey += 1;
   messagey = messagey % 1100;
