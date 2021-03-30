@@ -45,8 +45,8 @@ function draw() {
   sinx = sin(frameCount / 25) * 100;
   siny = cos(frameCount / 50) * 200;
   
-  ellipse(200 + sinx, 200 + siny, 50, 50);
-  ellipse(220 + sinx, 200 + siny, 50, 50);
+  ellipse(200 + sinx + mouseX, 200 + siny, 50, 50);
+  ellipse(220 + sinx + mouseX, 200 + siny, 50, 50);
 
   messagey += 1;
   messagey = messagey % 1100;
