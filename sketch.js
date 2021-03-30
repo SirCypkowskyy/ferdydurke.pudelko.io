@@ -36,7 +36,7 @@ function setup() {
 function draw() {
 
   messagey += 1;
-  messagey = messagey % 800;
+  messagey = messagey % 1100;
   
   background(204, 120);
 
@@ -57,13 +57,16 @@ function draw() {
 
   
   // hashtags
-  fill("blue")
+  fill("yellow")
   
   textFont(font_third)
   textSize(40);
-  text("groteska", 100, messagey)
+  text("groteska", 100, 1000 - messagey)
   text("karykatura", 400, messagey + 100)
   text("duchowa podróż", 356, messagey - 45)
+  text("zniewolenie", messagey, messagey)
+  text("niedojrzałość", messagey , 40)
+  text("formy", 1000 - messagey , 900 - messagey)
 
   // write the text in black and get its bounding box
 
